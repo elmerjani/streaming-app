@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { ClerkProvider } from '@clerk/nextjs';
 import { ThemeProvider } from '@/components/theme-provider';
+import Navbar from '@/components/ui/Navbar';
+import Search from '@/components/ui/Search';
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
@@ -35,6 +37,8 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <Navbar></Navbar>
+
             {children}
           </ThemeProvider>
         </body>
