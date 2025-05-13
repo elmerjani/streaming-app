@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { AccessToken } from 'livekit-server-sdk';
-import { auth } from '@clerk/nextjs/server';
+
 // Do not cache endpoint result
 export const revalidate = 0;
 
